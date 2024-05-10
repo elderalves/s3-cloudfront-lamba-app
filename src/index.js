@@ -6,9 +6,11 @@ import Application from './Application';
 
 import './index.css';
 
+const basename = process.env.PUBLIC_URL || '/';
+
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Application />
     </BrowserRouter>
   </React.StrictMode>,
